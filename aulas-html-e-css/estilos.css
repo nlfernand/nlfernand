@@ -1,0 +1,11 @@
+/* Regras CSS:seletores, propriedade e valores  */
+h1 { color:blue; 
+text-align: center;}
+h2{text-align: right;
+    color: aquamarine;
+}
+
+p{font-family: verdana; 
+font-size: 18px;}
+
+h3{ text-transform: uppercase;}

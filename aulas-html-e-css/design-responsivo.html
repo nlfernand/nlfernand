@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Responsivo</title>
+
+<style>  
+ /*Parte 1:regras de uso geral 
+ Regras que serão aplicadas não importando o tamanho de tela.
+ A maioria das regras são deste tipo e ficam aqui, no início do CSS.  */
+
+
+    body {
+        font-family: 'Segoe UI';
+        background-color: lightblue;
+    }
+
+    h1 { font-size: 28px; }
+    
+    b { background-color: white; }
+
+    #exemplo {
+        background-color: lightgoldenrodyellow;
+        padding: 10px;
+        border-radius: 5px;
+        width: 95%;
+        margin: auto;
+    }
+
+    /* Parte 2:Regra condicional usando media query */
+
+    @media screen and (min-width: 650px) {
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+        
+        p{
+            font-size: 22px;
+        }
+    }
+    
+</style>
+</head>
+<body>
+
+    <div id="exemplo">
+        <h1>Design Responsivo</h1>
+        <hr>
+        <p>Conjunto de técnicas de desenvolvimento front-end visando a construção de sites em que o layout e conteúdo sejam exibidos adequadamente em dispositivos com telas de tamanhos variados.</p>
+
+        <p>Existem 2 abordagens de desenvolvimento: <b>Mobile First</b> e <b>Desktop First</b>.</p>
+
+        <p>A mais comum é a <b>Mobile First</b>, vista neste exemplo.</p>
+    </div>
+
+</body>
+</html>
